@@ -3,9 +3,8 @@
 
 #pragma once
 
-#define TAPPING_TERM 175
 #undef DEBOUNCE
-#define DEBOUNCE 3
+#define DEBOUNCE 8
 #define USB_POLLING_INTERVAL_MS 1
 #define TAP_CODE_DELAY 0
 
