@@ -28,9 +28,9 @@ Tự động [counter strafe](https://www.youtube.com/shorts/kIm6tcTKiAc). Nhấ
 | :--- | :--- |
 | **Kit** | [Tofu60 Redux](https://kbdfans.com/products/tofu60-redux-kit-1) |
 | **PCB** | [DZ60RGB V2.1](https://kbdfans.com/products/dz60rgb-hot-swap-custom-keyboard-pcb) |
-| **Plate** | [Tofu60 Plate](https://kbdfans.com/collections/tofu60-redux/products/tofu60-redux-accessories) |
-| **Stab** | [Cherry Screw-in](https://kbdfans.com/collections/keyboard-stabilizer/products/cherry-screw-in-stabilizer) |
-| **Keycap** | [SA Aifei Black Gold](https://kicap.vn/bo-keycap-sa-aifei-black-gold) |
+| **Plate** | [Tofu60 Plate](https://kbdfans.com/products/tofu60-redux-plate) |
+| **Stab** | [Cherry Screw-in](https://kbdfans.com/products/cherry-pcb-mount-screw-in-stabilizers) |
+| **Keycap** | [SA Aifei Yellow Screen](https://kicap.vn/bo-keycap-sa-aifei-black-gold) |
 | **Switch** | [HMX Pink Peach](https://kicap.vn/switch-hmx-pink-peach-linear-silent) |
 
 ---
