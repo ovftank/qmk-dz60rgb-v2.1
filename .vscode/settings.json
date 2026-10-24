@@ -1,0 +1,33 @@
+{
+  "clangd.arguments": [
+    "--header-insertion=never"
+  ],
+  "files.associations": {
+    "*.h": "c",
+    "*.c": "c",
+    "*.inc": "c",
+    "*.cpp": "cpp",
+    "*.hpp": "cpp",
+    "keyboard.json": "jsonc",
+    "info.json": "jsonc",
+    "keymap.json": "jsonc",
+    "qmk.json": "jsonc"
+  },
+  "files.eol": "\n",
+  "editor.insertSpaces": true,
+  "files.trimTrailingWhitespace": true,
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false,
+    "editor.trimAutoWhitespace": false
+  },
+  "files.exclude": {
+    "**/.build": true,
+    "**/*.hex": true,
+    "**/*.bin": true,
+    "**/*.uf2": true,
+    "**/*.elf": true
+  },
+  "search.exclude": {
+    "**/.build": true
+  }
+}

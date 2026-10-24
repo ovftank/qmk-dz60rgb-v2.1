@@ -1,0 +1,5 @@
+{
+  "$schema": "https://pi.dev/schemas/settings.schema.json",
+  "shellPath": "~/QMK_MSYS/usr/bin/bash.exe",
+  "shellCommandPrefix": "export MSYSTEM=MINGW64\nexport QMK_DISTRIB_DIR=\"${QMK_DISTRIB_DIR:-/opt/qmk}\"\nexport PATH=\"$QMK_DISTRIB_DIR/bin:/opt/uv/tools/bin:/mingw64/bin:/usr/bin:$PATH\"\nexport USERPROFILE=\"$(cygpath -w \"$HOME\")\"\nexport HOMEDRIVE=\"${USERPROFILE%%:*}:\"\nexport HOMEPATH=\"${USERPROFILE#*:}\"\nexport QMK_HOME=\"${QMK_HOME:-$(cygpath -u \"$HOME\")/qmk_firmware}\"\nexport SHELL=\"$(cygpath -m /usr/bin/bash.exe)\""
+}

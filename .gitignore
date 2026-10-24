@@ -1,0 +1,13 @@
+# Build artifacts
+.build/
+*.hex
+*.bin
+*.uf2
+*.elf
+*.map
+compile_commands.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
