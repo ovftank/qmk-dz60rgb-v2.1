@@ -14,24 +14,18 @@ F1-F12, VIM navigation. Giữ phím `Fn`.
 
 ![Function Layer](./layer-2.png)
 
-### Gaming Layer (L2)
-
-Tự động [counter strafe](https://www.youtube.com/shorts/kIm6tcTKiAc). Nhấn `Fn + OO` để toggle.
-
-![Gaming Layer](./layer-3.png)
-
 ---
 
 ## Cấu hình (Specs)
 
-| Linh kiện | Mô tả |
-| :--- | :--- |
-| **Kit** | [Tofu60 Redux](https://kbdfans.com/products/tofu60-redux-kit-1) |
-| **PCB** | [DZ60RGB V2.1](https://kbdfans.com/products/dz60rgb-hot-swap-custom-keyboard-pcb) |
-| **Plate** | [Tofu60 Plate](https://kbdfans.com/products/tofu60-redux-plate) |
-| **Stab** | [Cherry Screw-in](https://kbdfans.com/products/cherry-pcb-mount-screw-in-stabilizers) |
-| **Keycap** | [SA Aifei Yellow Screen](https://kicap.vn/bo-keycap-sa-aifei-black-gold) |
-| **Switch** | [HMX Pink Peach](https://kicap.vn/switch-hmx-pink-peach-linear-silent) |
+| Linh kiện  | Mô tả                                                                                 |
+| :--------- | :------------------------------------------------------------------------------------ |
+| **Kit**    | [Tofu60 Redux](https://kbdfans.com/products/tofu60-redux-kit-1)                       |
+| **PCB**    | [DZ60RGB V2.1](https://kbdfans.com/products/dz60rgb-hot-swap-custom-keyboard-pcb)     |
+| **Plate**  | [Tofu60 Plate](https://kbdfans.com/products/tofu60-redux-plate)                       |
+| **Stab**   | [Cherry Screw-in](https://kbdfans.com/products/cherry-pcb-mount-screw-in-stabilizers) |
+| **Keycap** | [SA Aifei Yellow Screen](https://kicap.vn/bo-keycap-sa-aifei-black-gold)              |
+| **Switch** | [HMX Pink Peach](https://kicap.vn/switch-hmx-pink-peach-linear-silent)                |
 
 ---
 
