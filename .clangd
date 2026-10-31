@@ -1,5 +1,5 @@
 CompileFlags:
-    CompilationDatabase: ../../qmk_firmware
+    CompilationDatabase: .
     Add:
         - -Wno-unknown-attributes
         - -Wno-maybe-uninitialized
@@ -7,6 +7,7 @@ CompileFlags:
         - -Wno-pointer-to-int-cast
         - -Wno-int-to-void-pointer-cast
         - -DPROGMEM=
+        - -Duint_farptr_t=uint32_t
         - -D__AVR_ATmega32U4__
         - -ferror-limit=0
     Remove:

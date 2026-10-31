@@ -2,21 +2,13 @@
 
 ## Layer
 
-### Base Layer (L0)
+Base:
 
-Gõ phím cơ bản.
+![Base layer](./layer-1.png)
 
-![Base Layer](./layer-1.png)
+![Fn layer](./layer-2.png)
 
-### Function Layer (L1)
-
-F1-F12, VIM navigation. Giữ phím `Fn`.
-
-![Function Layer](./layer-2.png)
-
----
-
-## Cấu hình (Specs)
+## Cấu hình
 
 | Linh kiện  | Mô tả                                                                                 |
 | :--------- | :------------------------------------------------------------------------------------ |
@@ -27,23 +19,33 @@ F1-F12, VIM navigation. Giữ phím `Fn`.
 | **Keycap** | [SA Aifei Yellow Screen](https://kicap.vn/bo-keycap-sa-aifei-black-gold)              |
 | **Switch** | [HMX Pink Peach](https://kicap.vn/switch-hmx-pink-peach-linear-silent)                |
 
----
+## Build
 
-## Build & Flash
+Cài QMK một lần: Windows dùng [QMK MSYS](https://msys.qmk.fm/), macOS/Linux chạy `curl -fsSL https://install.qmk.fm | sh`.
 
-### 1. Build
-
-Cần cài [QMK MSYS](https://github.com/qmk/qmk_distro_msys/releases/latest).
-
-```bash
+```sh
 qmk setup
-cd qmk_firmware/keyboards/dztech/dz60rgb/keymaps/
-git clone https://github.com/ovftank/qmk-dz60rgb-v2.1.git ovftank
-qmk compile -j 0 -kb dztech/dz60rgb/v2_1 -km ovftank
+git clone https://github.com/ovftank/qmk-dz60rgb-v2.1.git
+qmk config user.overlay_dir="$(realpath qmk-dz60rgb-v2.1)"
+qmk compile -kb dztech/dz60rgb/v2_1 -km ovftank
 ```
 
-### 2. Flash
+firmware output `qmk_firmware/dztech_dz60rgb_v2_1_ovftank.bin`.
 
-1. Giữ **Esc** khi cắm cáp để vào Bootloader.
-2. Xóa `FLASH.BIN` trong ổ **KBDFANS**, copy file `.bin` mới vào.
-3. **Eject (bắt buộc)**, rút cáp cắm lại.
+## Flash
+
+Bootloader là LUFA mass storage: vào bootloader thì board hiện thành ổ USB tên `KBDFANS`, nhận file `.bin`. `qmk flash` ko hỗ trợ loại này nên phải copy tay.
+
+1. Vào bootloader: giữ `Esc` lúc cắm cáp, hoặc bấm `Fn` + `Del`. Ko thấy ổ KBDFANS thì tháo case, bấm nút RESET mặt sau PCB.
+2. Trong ổ: xoá `FLASH.BIN` cũ (để nguyên `EEPROM.BIN`), copy file `.bin` vào rồi đổi tên thành `FLASH.BIN`.
+3. Eject ổ đúng cách, rồi rút cáp, đợi vài giây, cắm lại.
+
+Manual: [KBDfans USB Drive Flash Manual](https://docs.google.com/document/d/111qx6Qec4JqtIhWaZlMND-VuRnFtn9a-gJaHN8fsL7M/edit?usp=sharing).
+
+## Dev
+
+gen `compile_commands.json`
+
+```sh
+python3 tools/clangd-db.py
+```
